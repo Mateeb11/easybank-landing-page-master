@@ -1,14 +1,17 @@
+import Header from "./Component/Header/Header";
+import Content from "./Component/Content/Content";
+import Footer from "./Component/Footer/Footer";
 
-import './App.scss'
+import "./App.scss";
 
 function App() {
-
   return (
     <>
-
-asjdkasj
+      <Header></Header>
+      <Content></Content>
+      <Footer></Footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
