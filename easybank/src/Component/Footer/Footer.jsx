@@ -17,19 +17,29 @@ export default function Footer() {
         <nav aria-label="Social media">
           <ul>
             <li>
-              <img src={facebook} alt="facebook logo" />
+              <a href="#">
+                <img src={facebook} alt="Facebook logo" />
+              </a>
             </li>
             <li>
-              <img src={youtube} alt="facebook logo" />
+              <a href="#">
+                <img src={youtube} alt="Youtube logo" />
+              </a>
             </li>
             <li>
-              <img src={twitter} alt="facebook logo" />
+              <a href="#">
+                <img src={twitter} alt="Twitter logo" />
+              </a>
             </li>
             <li>
-              <img src={pinterest} alt="facebook logo" />
+              <a href="#">
+                <img src={pinterest} alt="Pinterest logo" />
+              </a>
             </li>
             <li>
-              <img src={instagram} alt="facebook logo" />
+              <a href="#">
+                <img src={instagram} alt="Instagram logo" />
+              </a>
             </li>
           </ul>
         </nav>
