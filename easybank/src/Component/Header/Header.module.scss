@@ -7,14 +7,20 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 1.5em 1.25em;
-
   background-color: var(--white);
 
+  img {
+    padding: 1.5em 1.25em;
+  }
+
   .primaryNav {
-    position: absolute;
-    top: 5em;
-    right: 2.75em;
+    position: fixed;
+
+    width: 85%;
+    left: 50%;
+    margin-left: -42.5%;
+    top: 5.5em;
+
     padding: 2em 7em;
 
     background-color: var(--white);
