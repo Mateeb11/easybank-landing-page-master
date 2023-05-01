@@ -1,3 +1,70 @@
-.h1 {
-  color: red;
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 111;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5em 1.25em;
+
+  background-color: var(--white);
+
+  .primaryNav {
+    position: absolute;
+    top: 5em;
+    right: 1.1em;
+    padding: 2em 7em;
+
+    background-color: var(--white);
+
+    border-radius: 2%;
+
+    transform: scale(0.01);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center top;
+
+    &.open {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+
+      a {
+        color: var(--dark-blue);
+      }
+    }
+  }
+  .button {
+    display: none;
+  }
+}
+
+.navBackground {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  background: rgb(45, 49, 77);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 49, 77, 0.2959558823529411) 0%,
+    rgba(45, 49, 77, 0.7049194677871149) 26%,
+    rgba(45, 49, 77, 1) 62%
+  );
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  &.open {
+    opacity: 70%;
+  }
 }
