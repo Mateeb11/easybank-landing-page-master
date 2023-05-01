@@ -14,7 +14,7 @@
   .primaryNav {
     position: absolute;
     top: 5em;
-    right: 1.1em;
+    right: 2.75em;
     padding: 2em 7em;
 
     background-color: var(--white);
@@ -53,6 +53,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  z-index: -1;
 
   background: rgb(45, 49, 77);
   background: linear-gradient(
@@ -66,5 +67,7 @@
   transition: opacity 0.5s ease;
   &.open {
     opacity: 70%;
+    z-index: 1;
+    touch-action: none;
   }
 }

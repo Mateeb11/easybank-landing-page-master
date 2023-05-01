@@ -49,6 +49,7 @@ export default function Header() {
       </header>
       <div
         className={` ${openHamburger && classes.open} ${classes.navBackground}`}
+        onClick={openHamburgerHandler}
       ></div>
     </>
   );

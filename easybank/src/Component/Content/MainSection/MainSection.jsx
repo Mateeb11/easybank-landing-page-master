@@ -8,9 +8,9 @@ import backgroundMobile from "../../../assets/bg-intro-mobile.svg";
 
 export default function MainSection() {
   return (
-    <section>
-      <div>
-        <h2>Next genetation digital banking</h2>
+    <section className={classes.container}>
+      <div className={classes.content}>
+        <h1>Next genetation digital banking</h1>
         <p>
           Take your financial life online. Your Easybank account will be a
           one-stop-shop for spending, saving, budgeting, investing, and much
@@ -18,9 +18,17 @@ export default function MainSection() {
         </p>
         <Button></Button>
       </div>
-      <div>
-        <img src={mockups} alt="mockups for the app" />
-        <img src={backgroundMobile} alt="" />
+      <div className={classes.photos}>
+        <img
+          src={mockups}
+          alt="mockups for the app"
+          className={classes.mockups}
+        />
+        <img
+          src={backgroundMobile}
+          alt="shapes"
+          className={classes.background}
+        />
       </div>
     </section>
   );
