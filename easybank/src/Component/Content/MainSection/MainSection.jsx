@@ -9,7 +9,7 @@ import backgroundMobile from "../../../assets/bg-intro-mobile.svg";
 export default function MainSection() {
   return (
     <section className={classes.container}>
-      <div className={classes.content}>
+      <div className={classes.info}>
         <h1>Next genetation digital banking</h1>
         <p>
           Take your financial life online. Your Easybank account will be a

@@ -7,16 +7,16 @@ import api from "../../../assets/icon-api.svg";
 
 export default function Explanation() {
   return (
-    <section>
-      <div>
-        <h3>Why choose Easybank?</h3>
+    <section className={classes.container}>
+      <div className={classes.info}>
+        <h2>Why choose Easybank?</h2>
         <p>
           We leverage Open Banking to turn your bank account into your financial
           hub. Control your finances like never before.
         </p>
       </div>
-      <div>
-        <div>
+      <div className={classes.pointsContainer}>
+        <div className={classes.point}>
           <img src={online} alt="icon shows an online payment cards" />
           <h4>Online Banking</h4>
           <p>
@@ -24,7 +24,7 @@ export default function Explanation() {
             your finances wherever you are in the world.
           </p>
         </div>
-        <div>
+        <div className={classes.point}>
           <img src={budgeting} alt="icon shows budgeting solution on a phone" />
           <h4>Simple Budgeting</h4>
           <p>
@@ -32,7 +32,7 @@ export default function Explanation() {
             when you’re close to hitting your limits.
           </p>
         </div>
-        <div>
+        <div className={classes.point}>
           <img
             src={onboarding}
             alt="icon shows a support team talking and working and talking togther"
@@ -43,7 +43,7 @@ export default function Explanation() {
             your finances wherever you are in the world.
           </p>
         </div>
-        <div>
+        <div className={classes.point}>
           <img
             src={api}
             alt="icon show a computer ship that hava a brain inside it to represent an API"
