@@ -45,6 +45,7 @@ export default function Header() {
           src={openHamburger ? close : hamburger}
           alt={openHamburger ? "Close icon" : "Hamburger icon"}
           onClick={openHamburgerHandler}
+          className={classes.hamburger}
         />
       </header>
       <div

@@ -6,21 +6,21 @@
   text-align: center;
 
   .photos {
-    margin-bottom: -6.5em;
+    margin-bottom: -5.5em;
   }
 
   .background {
     position: absolute;
     width: 100%;
-    top: 2em;
+    top: 1em;
     right: 0;
     z-index: -1;
   }
   .mockups {
     width: 100%;
     padding-inline: 1em;
-    transform: translateY(-7.5em);
-    clip-path: inset(7.5em 0 0 0);
+    transform: translateY(-6.5em);
+    clip-path: inset(6.5em 0 0 0);
   }
 
   .info {
