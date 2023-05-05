@@ -1,7 +1,13 @@
+.backgroundColor {
+  color: var(--white);
+}
+
 .container {
+  max-width: var(--desktop);
+  margin: auto;
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 3em;
+  padding-bottom: 3em;
 
   text-align: center;
 
@@ -45,6 +51,47 @@
       opacity: 0.7;
 
       width: min(100%, 30em);
+    }
+  }
+}
+
+@media (min-width: 770px) {
+  .backgroundColor {
+    background-image: url("../../../assets/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 52em -17em;
+  }
+  .container {
+    position: relative;
+    padding-block: 10em;
+
+    .photos {
+      margin: 0;
+    }
+    .background {
+      display: none;
+    }
+    .mockups {
+      display: none;
+      width: auto;
+      transform: none;
+      clip-path: none;
+
+      position: absolute;
+      top: -10em;
+      left: 20;
+    }
+
+    .info {
+      align-items: start;
+      text-align: start;
+
+      gap: 2em;
+
+      h1 {
+        margin-right: 12em;
+        font-size: var(--font-size-larger);
+      }
     }
   }
 }
