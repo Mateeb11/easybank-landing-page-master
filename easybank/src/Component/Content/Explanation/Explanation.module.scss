@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 2em;
+  gap: 2.25em;
 
   padding: 4.5em 1em;
 
@@ -45,18 +45,34 @@
     gap: 1.5em;
     align-items: center;
 
-    .info {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-
-      padding-inline: 2em;
-    }
     h4 {
       color: var(--dark-blue);
 
       font-weight: var(--font-weigts-regular);
       font-size: var(--font-size-medium);
+    }
+  }
+}
+
+@media (min-width: 870px) {
+  .container {
+    padding-block: 7em;
+    gap: 4em;
+    .info {
+      align-items: start;
+      text-align: start;
+
+      h2 {
+        padding: 0;
+      }
+    }
+    .pointsContainer {
+      flex-direction: row;
+      align-items: normal;
+    }
+    .point {
+      align-items: start;
+      text-align: start;
     }
   }
 }
