@@ -1,11 +1,17 @@
+.backgroundColor {
+  background-color: var(--very-light-gray);
+}
+
 .container {
-  display: grid;
-  justify-items: center;
+  max-width: var(--desktop);
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2em;
 
   padding: 4.5em 1em;
-
-  background-color: var(--very-light-gray);
 
   h3 {
     font-weight: var(--font-weigts-light);
@@ -13,45 +19,64 @@
 
     color: var(--dark-blue);
   }
+  .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 
-  article {
-    background-color: var(--white);
+    align-items: center;
 
-    border-radius: 0.5em;
+    article {
+      background-color: var(--white);
 
-    width: min(100%, 30em);
+      border-radius: 0.5em;
 
-    img {
-      aspect-ratio: 3/2;
-      width: 100%;
+      width: min(100%, 30em);
 
-      border-radius: 0.5em 0.5em 0 0;
+      img {
+        aspect-ratio: 3/2;
+        width: 100%;
+
+        border-radius: 0.5em 0.5em 0 0;
+      }
+
+      .info {
+        display: grid;
+        gap: 0.75em;
+
+        padding: 2.25em 2em;
+
+        p {
+          color: var(--grayish-blue);
+          font-weight: var(--font-weigts-light);
+
+          opacity: 0.75;
+        }
+        h4 {
+          font-weight: var(--font-weigts-regular);
+          font-size: var(--font-size-medium);
+
+          color: var(--dark-blue);
+        }
+        .author {
+          font-size: var(--font-size-smaller);
+        }
+        .description {
+          font-size: var(--font-size-small);
+        }
+      }
     }
+  }
+}
 
-    .info {
-      display: grid;
-      gap: 0.75em;
+@media (min-width: 1000px) {
+  .container {
+    align-items: start;
 
-      padding: 2.25em 2em;
-
-      p {
-        color: var(--grayish-blue);
-        font-weight: var(--font-weigts-light);
-
-        opacity: 0.75;
-      }
-      h4 {
-        font-weight: var(--font-weigts-regular);
-        font-size: var(--font-size-medium);
-
-        color: var(--dark-blue);
-      }
-      .author {
-        font-size: var(--font-size-smaller);
-      }
-      .description {
-        font-size: var(--font-size-small);
-      }
+    padding-block: 6em;
+    .articles {
+      flex-direction: row;
+      align-items: normal;
     }
   }
 }
