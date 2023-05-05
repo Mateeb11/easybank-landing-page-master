@@ -1,6 +1,12 @@
 $gap: 1.5em;
 
+.backgroundColor {
+  background-color: var(--dark-blue);
+}
 .container {
+  max-width: var(--desktop);
+  margin: auto;
+
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -8,18 +14,16 @@ $gap: 1.5em;
   justify-content: space-between;
   gap: $gap;
 
-  padding: 2em;
-
-  background-color: var(--dark-blue);
+  padding: 3em 1em;
 
   nav {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: $gap;
   }
 
   .social {
     display: grid;
-
     gap: $gap;
 
     img {
@@ -28,14 +32,13 @@ $gap: 1.5em;
 
     ul {
       display: flex;
-      justify-content: center;
       gap: $gap;
     }
   }
   .secondary {
     ul {
       display: grid;
-      gap: 1em;
+      gap: $gap;
 
       font-weight: var(--font-weigts-light);
 
@@ -57,6 +60,43 @@ $gap: 1.5em;
       opacity: 0.25;
 
       font-weight: var(--font-weigts-light);
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+
+    nav {
+      flex-direction: row;
+      gap: 9em;
+    }
+    .social {
+      gap: 4em;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        margin: 0;
+      }
+      ul {
+        gap: 0.75em;
+      }
+    }
+    .secondary {
+      text-align: start;
+      justify-content: space-between;
+      ul {
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 7em;
+      }
+    }
+
+    .button {
+      align-items: end;
+      justify-content: end;
+      gap: 2.5em;
     }
   }
 }
