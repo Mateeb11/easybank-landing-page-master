@@ -1,7 +1,13 @@
-.container {
+.backgroundColor {
   position: sticky;
   top: 0;
   z-index: 111;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: var(--desktop);
+  margin: auto;
 
   display: flex;
   align-items: center;
@@ -9,7 +15,7 @@
 
   padding: 1.5em 1em;
 
-  background-color: var(--white);
+  z-index: 1;
 
   .primaryNav {
     position: fixed;
@@ -53,9 +59,9 @@
 
 .navBackground {
   position: fixed;
-  height: 100%;
+
   width: 100%;
-  top: 0;
+  top: 1;
   left: 0;
   z-index: -1;
 
@@ -70,8 +76,9 @@
   opacity: 0;
   transition: opacity 0.5s ease;
   &.open {
+    height: 100%;
     opacity: 70%;
-    z-index: 1;
+    z-index: -2;
     touch-action: none;
   }
 }

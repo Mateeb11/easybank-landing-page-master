@@ -1,10 +1,15 @@
+.backgroundColor {
+  background-color: var(--light-grayish-blue);
+}
+
 .container {
+  max-width: var(--desktop);
+  margin: auto;
+
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 2em;
-
-  background-color: var(--light-grayish-blue);
 
   padding: 4.5em 1em;
 

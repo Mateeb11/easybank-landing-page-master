@@ -15,7 +15,7 @@ export default function Header() {
     setOpenHamburger(!openHamburger);
   };
   return (
-    <>
+    <div className={classes.backgroundColor}>
       <header className={classes.container}>
         <img src={logo} alt="easy bank logo" />
         <nav
@@ -52,6 +52,6 @@ export default function Header() {
         className={` ${openHamburger && classes.open} ${classes.navBackground}`}
         onClick={openHamburgerHandler}
       ></div>
-    </>
+    </div>
   );
 }
