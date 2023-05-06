@@ -34,8 +34,6 @@
     flex-direction: column;
     gap: 1em;
 
-    padding-inline: 2em;
-
     align-items: center;
 
     h1 {
@@ -43,6 +41,8 @@
       font-weight: var(--font-weigts-light);
 
       color: var(--dark-blue);
+
+      padding-inline: 2em;
     }
     p {
       line-height: 1.75em;
@@ -55,31 +55,38 @@
   }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 1100px) {
   .backgroundColor {
     background-image: url("../../../assets/bg-intro-desktop.svg");
     background-repeat: no-repeat;
-    background-position: 52em -17em;
+    background-position: 42vw -17em;
   }
   .container {
-    position: relative;
-    padding-block: 10em;
+    display: block;
+    padding: 7em 0 7em 1em;
+
+    flex-direction: row;
 
     .photos {
+      max-width: 100%;
+      position: absolute;
+      right: 0;
+      top: -2em;
+      overflow: hidden;
+
       margin: 0;
     }
     .background {
       display: none;
     }
     .mockups {
-      display: none;
-      width: auto;
-      transform: none;
-      clip-path: none;
+      padding: 0;
+      width: auto !important;
+      height: auto;
 
-      position: absolute;
-      top: -10em;
-      left: 20;
+      transform: translateX(17%);
+
+      clip-path: none;
     }
 
     .info {
@@ -87,11 +94,31 @@
       text-align: start;
 
       gap: 2em;
+      margin-right: 40em;
 
       h1 {
-        margin-right: 12em;
+        padding: 0;
+
         font-size: var(--font-size-larger);
       }
+    }
+  }
+}
+
+@media (min-width: 770px) {
+  .container {
+    .mockups {
+      width: 80%;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    .mockups {
+      width: 70%;
+    }
+    .info {
+      padding-top: 5em;
     }
   }
 }
