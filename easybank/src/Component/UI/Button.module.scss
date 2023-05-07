@@ -10,11 +10,19 @@
   color: var(--white);
 
   font-weight: var(--font-weigts-regular);
-
   background: rgb(49, 211, 92);
   background: linear-gradient(
     90deg,
     rgba(49, 211, 92, 1) 10%,
     rgba(43, 183, 218, 1) 90%
   );
+
+  &:hover {
+    background: rgb(107, 227, 139);
+    background: linear-gradient(
+      150deg,
+      rgba(107, 227, 139, 1) 10%,
+      rgba(110, 202, 226, 1) 90%
+    );
+  }
 }
