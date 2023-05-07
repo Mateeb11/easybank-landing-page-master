@@ -85,6 +85,7 @@
 
 @media (min-width: 770px) {
   .container {
+    // border: 1px solid black;
     .primaryNav {
       position: relative;
       transform: none;
@@ -100,6 +101,38 @@
         justify-content: center;
 
         gap: 2em;
+
+        li {
+          a {
+            position: relative;
+            &::after {
+              position: absolute;
+
+              bottom: -2.2em;
+              left: 0;
+
+              width: 0%;
+              content: ".";
+              color: transparent;
+              height: 4px;
+
+              transition: all 0.3s;
+
+              background: rgb(49, 211, 92);
+              background: linear-gradient(
+                90deg,
+                rgba(49, 211, 92, 1) 10%,
+                rgba(43, 183, 218, 1) 90%
+              );
+            }
+            &:hover::after {
+              width: 100%;
+            }
+            &:hover {
+              color: black;
+            }
+          }
+        }
 
         a {
           color: var(--grayish-blue);
