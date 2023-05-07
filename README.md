@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/easybank-landing-page-solution-_lMMOD-IIL)
 - Live Site URL: [Easybank](https://gifted-selection.surge.sh)
 
 ## My process
