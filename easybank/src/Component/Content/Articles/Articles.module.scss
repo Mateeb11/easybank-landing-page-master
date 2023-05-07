@@ -57,6 +57,14 @@
           font-size: var(--font-size-medium);
 
           color: var(--dark-blue);
+
+          cursor: pointer;
+
+          &:hover {
+            color: var(--white);
+            filter: invert(23%) sepia(58%) saturate(602%) hue-rotate(108deg)
+              brightness(91%) contrast(95%);
+          }
         }
         .author {
           font-size: var(--font-size-smaller);
