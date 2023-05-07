@@ -10,13 +10,10 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Why with React](#why-with-react)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -53,7 +50,7 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library framework
 - [Vite](https://vitejs.dev/) - local development server
 
-## Why with React
+### Why with React
 
 Beacuse maybe in the future the app needs to add others pages, add functnalties, in thats case it will be easier to do it with a library that can handle complex problems easier than vanila javascript.
 
