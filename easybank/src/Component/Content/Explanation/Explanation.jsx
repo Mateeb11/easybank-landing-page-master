@@ -43,8 +43,8 @@ export default function Explanation() {
             />
             <h4>Fast Onboarding</h4>
             <p>
-              Our modern web and mobile applications allow you to keep track of
-              your finances wherever you are in the world.
+              We don’t do branches. Open your account in minutes online and
+              start taking control of your finances right away.
             </p>
           </div>
           <div className={classes.point}>
